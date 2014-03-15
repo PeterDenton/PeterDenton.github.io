@@ -1,0 +1,21 @@
+.center {text-align:center;}
+
+body
+{
+background-color: #E6E6E6;
+color: #000050;
+margin:50px;
+}
+
+h1
+{
+font-family:verdana,san-serif;
+
+}
+
+ul
+{
+list-style-type:none;
+padding:1em;
+margin:2em;
+}
