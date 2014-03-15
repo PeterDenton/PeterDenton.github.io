@@ -126,8 +126,32 @@ body
 {
 background-color: #E6E6E6;
 color: #000050;
-margin: 25px 100px;
 font-family:verdana,san-serif;
+padding: 10px 50px;
+}
+
+#container
+{
+min-height: 100%;
+position: relative;
+}
+
+#header
+{
+padding-bottom: 10px;
+}
+
+#body
+{
+padding-bottom: 30px;
+}
+
+#footer
+{
+position: absolute;
+bottom: 0;
+right: 0;
+height: 30px;
 }
 
 a:link
@@ -142,25 +166,20 @@ color: #000050;
 text-decoration: none;
 font-weight: normal;
 }
-a:active
-{
-text-decoration: none;
-}
 a:hover
 {
 color: #0000FF;
 text-decoration: underline;
-font-weight: none;
+font-weight: normal;
 }
-
-h1
+a:active
 {
-font-family:verdana,san-serif;
+text-decoration: bold;
 }
 
 ul
 {
 list-style-type:none;
 padding:0;
-margin:0 20px;
+margin:5px 20px;
 }
