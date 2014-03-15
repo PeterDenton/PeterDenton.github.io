@@ -18,6 +18,8 @@ get_tex_as_html()
 	htlatex $name.tex
 	htlatex $name.tex
 
+	more ../main.css >> $name.css
+
 	cp $1/$name.pdf .
 	
 	rm $name.4ct
