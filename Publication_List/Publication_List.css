@@ -117,17 +117,13 @@ div.author{white-space: nowrap;}
 div.abstract {width:100%;}
 /* end css.sty */
 
-.center
-{
-text-align: center;
-}
-
 body
 {
 background-color: #E6E6E6;
 color: #000050;
-font-family:verdana,san-serif;
-padding: 10px 50px;
+font-family: arial;
+font-size: 150%;
+padding: 10px 20%;
 }
 
 #container
@@ -139,19 +135,25 @@ position: relative;
 #header
 {
 padding-bottom: 10px;
+text-align: center;
 }
 
 #body
 {
-padding-bottom: 30px;
+padding-bottom: 35px;
+text-align: center;
 }
 
 #footer
 {
 position: absolute;
 bottom: 0;
+
+left: 0;
 right: 0;
-height: 30px;
+text-align: center;
+
+height: 35px;
 }
 
 a:link
