@@ -34,9 +34,11 @@ mod_css()
 
 update()
 {
-#	tex_2_html $1
+	tex_2_html $1
 	mod_css $1
 }
 
 update /home/peter/Dropbox/Documents/Essays/CV
 update /home/peter/Dropbox/Documents/Essays/Publication_List
+update /home/peter/Dropbox/Books/Fiction/Original/Surface
+update /home/peter/Dropbox/Books/Fiction/Original/Plays
