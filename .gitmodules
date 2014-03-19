@@ -1,6 +1,6 @@
 [submodule "CV"]
 	path = CV
-	url = git@bitbucket.org:PeterDenton/CV.git
+	url = git@github.com:PeterDenton/CV.git
 [submodule "Publication_List"]
 	path = Publication_List
-	url = git@bitbucket.org:PeterDenton/publication-list.git
+	url = git@github.com:PeterDenton/Publication_List.git
