@@ -1,6 +1,6 @@
 [submodule "CV"]
 	path = CV
-	url = https://github.com:PeterDenton/CV.git
+	url = https://github.com/PeterDenton/CV.git
 [submodule "Publication_List"]
 	path = Publication_List
 	url = https://github.com/PeterDenton/Publication_List.git
