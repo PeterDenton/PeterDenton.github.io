@@ -27,6 +27,7 @@ text-align: center;
 
 #footer
 {
+clear: both;
 position: absolute;
 bottom: 0;
 
@@ -51,8 +52,8 @@ font-weight: normal;
 }
 a:hover
 {
-color: #000050;
-text-decoration: none;
+color: #FF6600;
+text-decoration: underline;
 font-weight: normal;
 }
 a:active
