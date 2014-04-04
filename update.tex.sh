@@ -15,7 +15,6 @@ tex_2_html()
 	rm $name.idv
 	rm $name.lg
 	rm $name.tmp
-	rm $name.xht
 	rm $name.xref
 
 	cd $cwd
@@ -39,6 +38,4 @@ update()
 }
 
 update /home/peter/Dropbox/Documents/Essays/CV
-update /home/peter/Dropbox/Documents/Essays/Publication_List
-update /home/peter/Dropbox/Books/Fiction/Original/Surface
-update /home/peter/Dropbox/Books/Fiction/Original/Plays
+#update /home/peter/Dropbox/Documents/Essays/Publication_List
