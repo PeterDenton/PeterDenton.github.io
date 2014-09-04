@@ -16,6 +16,7 @@ tex_2_html()
 	rm $name.lg
 	rm $name.tmp
 	rm $name.xref
+	rm tex4ht.tmp
 
 	cd $cwd
 }
