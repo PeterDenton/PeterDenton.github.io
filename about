@@ -1,0 +1,4 @@
+1. Run update script here before commiting pub list or CV
+2. Commit and push pub list and/or CV to at least gh (and probably bb)
+3. Run git pull in pub list and/or CV directory here
+4. Commit here and push up
