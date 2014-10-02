@@ -6,7 +6,7 @@ tex_2_html()
 	name=$(basename $1)
 	cd $1
 
-	htlatex $name.tex
+	htlatex $name.tex "html,fn-in"
 
 	more $cwd/main.css >> $name.css
 
@@ -39,4 +39,4 @@ update()
 }
 
 update /home/peter/Dropbox/Documents/Essays/CV
-#update /home/peter/Dropbox/Documents/Essays/Publication_List
+update /home/peter/Dropbox/Documents/Essays/Publication_List
