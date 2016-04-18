@@ -1,9 +1,9 @@
 [submodule "CV"]
 	path = CV
-	url = git://github.com/PeterDenton/CV.git
+	url = https://github.com/PeterDenton/CV.git
 [submodule "Publication_List"]
 	path = Publication_List
-	url = git://github.com/PeterDenton/Publication_List.git
+	url = https://github.com/PeterDenton/Publication_List.git
 [submodule "Research-Statement"]
 	path = Research-Statement
-	url = git://github.com/PeterDenton/Research-Statement.git
+	url = https://github.com/PeterDenton/Research-Statement.git
