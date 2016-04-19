@@ -4,6 +4,3 @@
 [submodule "Publication_List"]
 	path = Publication_List
 	url = https://github.com/PeterDenton/Publication_List.git
-[submodule "Research-Statement"]
-	path = Research-Statement
-	url = https://github.com/PeterDenton/Research-Statement.git
