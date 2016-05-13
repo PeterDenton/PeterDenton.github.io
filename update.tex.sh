@@ -17,6 +17,8 @@ tex_2_html()
 	rm $name.tmp
 	rm $name.xref
 
+	mv $name.html index.html
+
 	cd $cwd
 }
 

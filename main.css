@@ -1,9 +1,10 @@
 *
 {
-	margin: 0;
+margin: 0px auto;
 }
-html, body {
-	height: 100%;
+html, body
+{
+height: 100%;
 }
 body
 {
@@ -11,7 +12,21 @@ background-color: #E6E6E6;
 color: #000050;
 font-family: arial;
 font-size: 150%;
+}
+
+.center
+{
 text-align: center;
+}
+.hpadded
+{
+padding-left: 100px;
+padding-right: 100px;
+}
+.vpadded
+{
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 #header
