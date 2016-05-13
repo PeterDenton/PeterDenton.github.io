@@ -1,41 +1,39 @@
+*
+{
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
 body
 {
 background-color: #E6E6E6;
 color: #000050;
 font-family: arial;
 font-size: 150%;
-padding: 10px 10%;
-}
-
-#container
-{
-min-height: 100%;
-position: relative;
+text-align: center;
 }
 
 #header
 {
 padding-bottom: 10px;
-text-align: center;
 }
 
-#body
+#name
 {
-padding-bottom: 50px;
-text-align: center;
+padding: 25px 0px 25px;
 }
 
-#footer
+#container
 {
-clear: both;
-position: absolute;
-bottom: 0;
+min-height: 100%;
+margin: 0 auto -70px;
+}
 
-left: 0;
-right: 0;
-text-align: center;
-
-height: 40px;
+#footer, #push
+{
+height: 60px;
+padding-top: 10px
 }
 
 a:link
