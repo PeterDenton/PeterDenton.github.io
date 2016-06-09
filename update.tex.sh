@@ -8,7 +8,7 @@ tex_2_html()
 
 	htlatex $name.tex "html,fn-in"
 
-	more $cwd/main.css >> $name.css
+#	more $cwd/main.css >> $name.css
 
 	rm $name.4ct
 	rm $name.4tc
@@ -29,6 +29,7 @@ mod_css()
 	cd $1
 
 	more $cwd/main.css >> $name.css
+	more $cwd/$name.css >> $name.css
 
 	cd $cwd
 }
