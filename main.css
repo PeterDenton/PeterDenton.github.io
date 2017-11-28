@@ -52,12 +52,12 @@ padding: 25px 0px 25px;
 #container
 {
 min-height: 100%;
-margin: 0 auto -70px;
+margin: 0 auto -100px;
 }
 
 #footer, #push
 {
-height: 60px;
+height: 90px;
 padding-top: 10px
 }
 
