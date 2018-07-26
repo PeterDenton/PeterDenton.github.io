@@ -41,4 +41,4 @@ update()
 }
 
 update /home/peter/Dropbox/Documents/Essays/CV
-update /home/peter/Dropbox/Documents/Essays/Publication_List
+#update /home/peter/Dropbox/Documents/Essays/Publication_List
