@@ -25,9 +25,9 @@
 	<h2>Neutrino Code</h2>
 	<p><a href="../index.html">Peter B. Denton</a></p>
 	<p>View:
-		[<a onclick="showhide('all')">All</a>]
-		[<a onclick="showhide('mine')">Mine</a>]
-		[<a onclick="showhide('oscillation')">Oscillation</a>]
+		[<a id="all" style="font-weight:bold" onclick="showhide('all')">All</a>]
+		[<a id="mine" style="font-weight:normal" onclick="showhide('mine')">Mine</a>]
+		[<a id="oscillation" style="font-weight:normal" onclick="showhide('oscillation')">Oscillation</a>]
 	</p>
 </div>
 <div class="tpadded">
@@ -101,14 +101,18 @@ function showhide(category)
 	for (var i = 0; i < keys.length; i++)
 	{
 		var key = keys[i];
+		var x = document.getElementById(key);
 		if (key != category)
 		{
 			shown_dict[key] = false;
+			x.style.fontWeight = "normal";
 		}
 		else
 		{
 			shown_dict[key] = true;
+			x.style.fontWeight = "bold";
 		}
+		
 	}
 
 	// get all items
