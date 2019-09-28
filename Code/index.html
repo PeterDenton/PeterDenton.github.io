@@ -32,32 +32,54 @@
 </div>
 <div class="tpadded">
 	<ul class="hpadded vpadded" style="list-style-type:disc">
+		<span class="all">
+			<li>
+				<a target="_blank" href="https://github.com/IceCubeOpenSource/TauRunner">TauRunner</a>
+				by Ibrahim Safa, Carlos A. Argüelles, Alex Pizzuto
+				[<a target="_blank" href="https://arxiv.org/abs/1909.10487">1909.10487</a>]
+			</li>
+		</span>
+		<span class="all mine oscillation" style="display:inline;">
+			<li style='list-style-type: "\2605  ";'>
+				<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert-Compare">Nu-Pert-Compare</a>
+				by Peter B. Denton
+				[<a target="_blank" href="https://arxiv.org/abs/1902.00517">1902.00517</a>]
+			</li>
+		</span>
+		<span class="all" style="display:inline;">
+			<li>
+				<a target="_blank" href="https://github.com/harmscho/NuTauSim">NuTauSim</a>
+				by Jaime Alvarez-Muñiz, Washington R. Carvalho Jr, Kévin Payet, Andrés Romero-Wolf, Harm Schoorlemmer, and Enrique Zas
+				[<a target="_blank" href="https://arxiv.org/abs/1707.00334">1707.00334</a>]
+			</li>
+		
+		</span>
 		<span class="all mine" style="display:inline;">
-		<li style='list-style-type: "\2605  ";'>
-			<a target="_blank" href="https://github.com/PeterDenton/ANA">ANA: Astrophysical Neutrino Anisotropy</a>
-			by Peter B. Denton
-			[<a target="_blank" href="https://arxiv.org/abs/1703.09721">1703.09721</a>]
-		</li>
+			<li style='list-style-type: "\2605  ";'>
+				<a target="_blank" href="https://github.com/PeterDenton/ANA">ANA: Astrophysical Neutrino Anisotropy</a>
+				by Peter B. Denton
+				[<a target="_blank" href="https://arxiv.org/abs/1703.09721">1703.09721</a>]
+			</li>
 		</span>
 		<span class="all mine oscillation" style="display:inline;">
-		<li style='list-style-type: "\2605  ";'>
-			<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert">Nu-Pert</a>
-			by Peter B. Denton
-			[<a target="_blank" href="https://arxiv.org/abs/1604.08167">1604.08167</a>]
-		</li>
-		</span>
-		<span class="all mine oscillation" style="display:inline;">
-		<li style='list-style-type: "\2605  ";'>
-			<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert-Compare">Nu-Pert-Compare</a>
-			by Peter B. Denton
-			[<a target="_blank" href="https://arxiv.org/abs/1902.00517">1902.00517</a>]
-		</li>
+			<li style='list-style-type: "\2605  ";'>
+				<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert">Nu-Pert</a>
+				by Peter B. Denton
+				[<a target="_blank" href="https://arxiv.org/abs/1604.08167">1604.08167</a>]
+			</li>
 		</span>
 		<span class="all oscillation" style="display:inline;">
-		<li>
-			<a target="_blank" href="https://github.com/arguelles/nuSQuIDS">nuSQuIDS</a>
-			by Carlos Arguelles, Jordi Salvado, and Chris Weaver
-		</li>
+			<li>
+				<a target="_blank" href="https://www.mpi-hd.mpg.de/personalhomes/globes/index.html">GLoBES: General Long Baseline Experiment Simulator</a>
+				by Patrick Huber, Joachim Kopp, Manfred Lindner, and Walter Winter
+				[<a target="_blank" href="https://arxiv.org/abs/hep-ph/0407333">hep-ph/0407333</a>]
+			</li>
+		</span>
+		<span class="all oscillation" style="display:inline;">
+			<li>
+				<a target="_blank" href="https://github.com/arguelles/nuSQuIDS">nuSQuIDS</a>
+				by Carlos Argüelles, Jordi Salvado, and Chris Weaver
+			</li>
 		</span>
 	</ul>
 </div>
@@ -74,9 +96,6 @@ shown_dict["mine"] = false;
 shown_dict["oscillation"] = false;
 function showhide(category)
 {
-	// toggle
-	shown_dict[category] = ! shown_dict[category];
-
 	var keys = Object.keys(shown_dict);
 	// turn everything else off
 	for (var i = 0; i < keys.length; i++)
@@ -86,12 +105,10 @@ function showhide(category)
 		{
 			shown_dict[key] = false;
 		}
-	}
-
-	// if off, turn "all" on
-	if (!shown_dict[category])
-	{
-		shown_dict["all"] = true;
+		else
+		{
+			shown_dict[key] = true;
+		}
 	}
 
 	// get all items
