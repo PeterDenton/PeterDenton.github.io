@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../main.css"/>
+<link rel="icon" href="../favicon.ico">
+<title>Peter B. Denton: Neutrino Code</title>
+<meta name="keywords" content="Denton, Peter, Peter Denton, Peter B. Denton, Physics, Rice, Vanderbilt, Fermilab, NBIA, NBI, Niels Bohr, Code, Neutrinos">
+<meta name="author" content="Peter B. Denton">
+<meta name="description" content="Neutrino Code">
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$', '$'], ["\\(", "\\)"]], processEscapes:true},});</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69677137-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header" class="center vpadded">
+	<h2>Neutrino Code</h2>
+	<p><a href="../index.html">Peter B. Denton</a></p>
+	<p>View:
+		[<a onclick="showhide('all')">All</a>]
+		[<a onclick="showhide('mine')">Mine</a>]
+		[<a onclick="showhide('oscillation')">Oscillation</a>]
+	</p>
+</div>
+<div class="tpadded">
+	<ul class="hpadded vpadded" style="list-style-type:disc">
+		<span class="all mine" style="display:inline;">
+		<li style='list-style-type: "\2605  ";'>
+			<a target="_blank" href="https://github.com/PeterDenton/ANA">ANA: Astrophysical Neutrino Anisotropy</a>
+			by Peter B. Denton
+			[<a target="_blank" href="https://arxiv.org/abs/1703.09721">1703.09721</a>]
+		</li>
+		</span>
+		<span class="all mine oscillation" style="display:inline;">
+		<li style='list-style-type: "\2605  ";'>
+			<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert">Nu-Pert</a>
+			by Peter B. Denton
+			[<a target="_blank" href="https://arxiv.org/abs/1604.08167">1604.08167</a>]
+		</li>
+		</span>
+		<span class="all mine oscillation" style="display:inline;">
+		<li style='list-style-type: "\2605  ";'>
+			<a target="_blank" href="https://github.com/PeterDenton/Nu-Pert-Compare">Nu-Pert-Compare</a>
+			by Peter B. Denton
+			[<a target="_blank" href="https://arxiv.org/abs/1902.00517">1902.00517</a>]
+		</li>
+		</span>
+		<span class="all oscillation" style="display:inline;">
+		<li>
+			<a target="_blank" href="https://github.com/arguelles/nuSQuIDS">nuSQuIDS</a>
+			by Carlos Arguelles, Jordi Salvado, and Chris Weaver
+		</li>
+		</span>
+	</ul>
+</div>
+<div id="push"></div>
+</div>
+<div id="footer" class="center vpadded">
+<p>Contact me for any additions/corrections</p>
+<p>Updated: September 2019</p>
+</div>
+<script>
+var shown_dict = {};
+shown_dict["all"] = true;
+shown_dict["mine"] = false;
+shown_dict["oscillation"] = false;
+function showhide(category)
+{
+	// toggle
+	shown_dict[category] = ! shown_dict[category];
+
+	var keys = Object.keys(shown_dict);
+	// turn everything else off
+	for (var i = 0; i < keys.length; i++)
+	{
+		var key = keys[i];
+		if (key != category)
+		{
+			shown_dict[key] = false;
+		}
+	}
+
+	// if off, turn "all" on
+	if (!shown_dict[category])
+	{
+		shown_dict["all"] = true;
+	}
+
+	// get all items
+	var x = document.getElementsByClassName("all");
+
+	// apply changes
+	for (var i = 0; i < x.length; i++)
+	{
+		for (var j = 0; j < keys.length; j++)
+		{
+			if ((x[i].className.includes(keys[j]) && shown_dict[keys[j]]))
+			{
+				x[i].style.display = "inline";
+				break;
+			}
+		} // j, shown bools
+		if (j == keys.length)
+		{
+			x[i].style.display = "none";
+		}
+	} // i, elements in doc
+}
+</script>
+</body>
+</html>
