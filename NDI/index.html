@@ -36,7 +36,13 @@
 		<h6>(all times are BNL time, bluejeans works in-browser)</h1>
 		</div>
 		<ol reversed class="hpadded vpadded">
-			<li>Monday, March 23, 2020, 12 PM: <a target="_blank" href="http://inspirehep.net/author/profile/O.L.G.Peres.1">Orlando Peres</a> (Campinas) Title: TBD [<a target="_blank" href="https://bluejeans.com/743644842">Bluejeans</a>]</li>
+			<li id="Peres">Monday, March 23, 2020, 12 PM: <a target="_blank" href="http://inspirehep.net/author/profile/O.L.G.Peres.1">Orlando Peres</a> (Campinas) Title: Neutrino decay: the role of new interactions 
+				<a onclick="showhide('Peres', '.abstract')">[abstract]</a>
+				[<a target="_blank" href="https://bluejeans.com/743644842">Bluejeans</a>]
+				<div class="abstract" style="display:none;"><br>
+					I will review the topic fo neutrino decay and the possible tests of neutrino decay scenario, with/without daughters in the final state for the  forthcoming neutrino experiments. Present constraints are discussed briefly from T2K, MINOS, and KamLand.
+				</div>
+			</li>
 		</ol>
 	</div>
 </div>
@@ -44,5 +50,6 @@
 	<a href="Logo2.png"><img src="Logo2.png" alt="NDI Logo" height="175"></a>
 	<p>Updated: March, 2020</p>
 </div>
+<script> function showhide(name, y) { var x = document.getElementById(name).querySelectorAll(y); for (var i = 0; i < x.length; i++) {if (x[i].style.display === "none") { x[i].style.display = "inline"; } else { x[i].style.display = "none"; } } } </script>
 </body>
 </html>
