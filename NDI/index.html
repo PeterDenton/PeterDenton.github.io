@@ -18,10 +18,14 @@
   ga('create', 'UA-69677137-1', 'auto');
   ga('send', 'pageview');
 </script>
+<style>
+.container {max-height: calc(100vh - 270px); overflow: auto;}
+.footer {position: fixed; bottom: 0; left: 0; right: 0; height: 270px; text-align: center;}
+</style>
 </head>
 <body>
-<div>
-	<div id="header" class="center vpadded">
+<div class="container">
+	<div class="header center">
 		<h2>Brookhaven Neutrino Discovery Initiative</h2>
 		<p><a href="../index.html">Peter B. Denton</a></p>
 	</div>
@@ -42,39 +46,50 @@
 			<li id="Hostert">Monday, May 18, 2020, 12 PM: <a target="_blank" href="https://inspirehep.net/authors/1621061">Matheus Hostert</a> (Minnesota)
 			</li>
 			<li id="Tabrizi"><strong>Monday, April 20, 2020, 12 PM</strong>: <a target="_blank" href="https://inspirehep.net/authors/1284021">Zahra Tabrizi</a> (Virginia Tech)
-				Title: Precision measurements in the DUNE Near Detector Complex
+				Title: <strong>Precision measurements in the DUNE Near Detector Complex</strong>
 				[<a onclick="showhide('Tabrizi', '.abstract')">abstract</a>]
 				[<a target="_blank" href="https://arxiv.org/abs/1910.02971">Paper1</a>]
 				[<a target="_blank" href="https://arxiv.org/abs/1807.10973">Paper2</a>]
-				<div class="abstract" style="display:none;"><br>
+				<div class="abstract" style="display:none;"><br><br>
 					The experimental confirmation of the oscillation of neutrino flavors in the last 2 decades has been a milestone in clarifying the framework of particle physics. Some of neutrino properties can be explained through the current rich data of the neutrino experiments; however, there are still important unanswered questions which need to be clarified. Next-generation, long-baseline neutrino oscillation experiments are under serious consideration to answer these questions. The unprecedented neutrino fluxes at these experiments make them suitable for precision calculations of the SM predictions as well as searching for light new physics (NP) via measurements of the trident production and neutrino scattering off electrons and nuclei in the near detectors. We provide estimates of the number and distribution of neutrino-electron scattering and trident events at the DUNE near detector, and use them to study the weak angle.
-				</div>
+				<br><br></div>
 			</li>
 			<li id="Coloma">Monday, April 6, 2020, 12 PM: <a target="_blank" href="http://inspirehep.net/author/profile/P.Coloma.1">Pilar Coloma</a> (Valencia)
 				Title: Atmospheric long-lived particle searches
 				[<a onclick="showhide('Coloma', '.abstract')">abstract</a>]
-				[<a href="Coloma.pdf">Slides</a>]
+				[<a target="_blank" href="Coloma.pdf">Slides</a>]
 				[<a target="_blank" href="https://bluejeans.com/s/apkNm">Recording</a>]
 				[<a target="_blank" href="https://arxiv.org/abs/1910.12839">Paper1</a>]
 				[<a target="_blank" href="https://arxiv.org/abs/1911.09129">Paper2</a>]
-				<div class="abstract" style="display:none;"><br>
+				<div class="abstract" style="display:none;"><br><br>
 					    Long-lived particles with masses at the GeV scale or below could be copiously produced by cosmic rays in the upper layers of the atmosphere. After traveling distances of the order of $\mathcal{O}(15)$~km, they could then decay inside atmospheric neutrino detectors and neutrino telescopes, leaving an observable signal. In this talk I will focus on the production of heavy neutral leptons from the decays of mesons and $\tau$ leptons in the atmosphere, and I will present the limits we obtained using data publicly available from existing experiments.
+				<br><br></div>
 			</li>
 			<li id="Peres">Monday, March 23, 2020, 12 PM: <a target="_blank" href="http://inspirehep.net/author/profile/O.L.G.Peres.1">Orlando Peres</a> (Campinas)
 				Title: Neutrino decay: the role of new interactions
 				[<a onclick="showhide('Peres', '.abstract')">abstract</a>]
-				[<a href="Peres.pdf">Slides</a>]
+				[<a target="_blank" href="Peres.pdf">Slides</a>]
 				[<a target="_blank" href="https://arxiv.org/abs/1911.01447">Paper</a>]
-				<div class="abstract" style="display:none;"><br>
+				<div class="abstract" style="display:none;"><br><br>
 					I will review the topic of neutrino decay and the possible tests of neutrino decay scenario, with/without daughters in the final state for the forthcoming neutrino experiments. Present constraints are discussed briefly from T2K, MINOS, and KamLand.
-				</div>
+				<br><br></div>
 			</li>
 		</ol>
 	</div>
 </div>
-<div style="width: 100%; position: fixed; left: 0; bottom: 0; text-align: center;">
-	<a href="Logo2.png"><img src="Logo2.png" alt="NDI Logo" height="175"></a>
-	<p>Updated: April, 2020</p>
+<div class="footer">
+	<div style="padding-top: 5px;">
+		<a href="Logo2.png"><img src="Logo2.png" alt="NDI Logo" height="175"></a>
+	</div>
+	<p>Updated: April 2020</p>
+	Contact:
+	<script>
+		<!--
+		document.write("<a tar" + "get=\"_bl" + "ank\" hre" + "f=mai" + "lto:" + "pet" + "erbd" + "1@g" + "mai" + "l.c" + "om>E" + "mai" + "l</a>" + ".")
+		//-->
+	</script>
+	<br>
+	&copy; 2014-2020 Peter Denton.
 </div>
 <script> function showhide(name, y) { var x = document.getElementById(name).querySelectorAll(y); for (var i = 0; i < x.length; i++) {if (x[i].style.display === "none") { x[i].style.display = "inline"; } else { x[i].style.display = "none"; } } } </script>
 </body>
