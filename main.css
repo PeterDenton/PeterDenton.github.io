@@ -13,7 +13,6 @@ color: #000050;
 font-family: arial;
 font-size: 150%;
 }
-
 .center
 {
 text-align: center;
@@ -36,29 +35,30 @@ padding-top: 20px;
 {
 padding-bottom: 20px;
 }
-
 table { table-layout: fixed; }
 td { width: 33%; }
-#header
+.header
 {
 padding-bottom: 10px;
 }
-
-#name
+.name
 {
 padding: 25px 0px 25px;
 }
-
-#container
+.container
 {
-min-height: 100%;
-margin: 0 auto -120px;
+max-height: calc(100vh - 85px);
+overflow: auto;
 }
-
-#footer, #push
+.footer
 {
-height: 50px;
-padding-top: 10px
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 85px;
+text-align: center;
+border-top: 1px solid black;
 }
 
 a:link

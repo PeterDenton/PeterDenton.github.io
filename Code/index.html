@@ -20,18 +20,26 @@
 </script>
 </head>
 <body>
-<div id="container">
-<div id="header" class="center vpadded">
+<div class="container">
+<div class="header center vpadded">
 	<h2>Neutrino Code</h2>
 	<p><a href="../index.html">Peter B. Denton</a></p>
 	<p>View:
 		[<a id="all" style="font-weight:bold" onclick="showhide('all')">All</a>]
 		[<a id="mine" style="font-weight:normal" onclick="showhide('mine')">Mine</a>]
 		[<a id="oscillation" style="font-weight:normal" onclick="showhide('oscillation')">Oscillation</a>]
+		[<a id="bsm" style="font-weight:normal" onclick="showhide('bsm')">BSM</a>]
 	</p>
 </div>
 <div class="tpadded">
 	<ul class="hpadded vpadded" style="list-style-type:disc">
+		<!--<span class="all mine bsm">
+			<li style='list-style-type: "\2605  ";'>
+				<a target="_blank" href="https://github.com/PeterDenton/Astro-Nu-Decay">Astro-Nu-Decay</a>
+				by Asli Abdullahi, Peter B. Denton
+				[<a target="_blank" href="https://arxiv.org/abs/xxxx.xxxxx">xxxx.xxxxx</a>]
+			</li>
+		</span>-->
 		<span class="all mine oscillation">
 			<li style='list-style-type: "\2605  ";'>
 				<a target="_blank" href="https://github.com/PeterDenton/Neutrino-Normalcy">Neutrino-Normalcy</a>
@@ -39,7 +47,7 @@
 				[<a target="_blank" href="https://arxiv.org/abs/2003.04319">2003.04319</a>]
 			</li>
 		</span>
-		<span class="all">
+		<span class="all bsm">
 			<li>
 				<a target="_blank" href="https://github.com/MiguelEA/nudec_BSM">NUDEC_BSM</a>
 				by Miguel Escudero Abenza
@@ -104,20 +112,24 @@
 		</span>
 	</ul>
 </div>
-<div id="push"></div>
 </div>
-<div id="footer" class="center vpadded">
-<p>Contact
-<script>
-document.write("<a tar" + "get=\"_bl" + "ank\" hre" + "f=mai" + "lto:" + "pet" + "erbd" + "1@g" + "mai" + "l.c" + "om>m" + "e</a>" + " ")
-</script>for any additions/corrections</p>
-<p>Updated: March 2020</p>
+<div class="footer">
+	<p>Updated: April 2020</p>
+	Contact:
+	<script>
+		<!--
+		document.write("<a tar" + "get=\"_bl" + "ank\" hre" + "f=mai" + "lto:" + "pet" + "erbd" + "1@g" + "mai" + "l.c" + "om>E" + "mai" + "l</a>" + ".")
+		//-->
+	</script>
+	<br>
+	&copy; 2014-2020 Peter Denton.
 </div>
 <script>
 var shown_dict = {};
 shown_dict["all"] = true;
 shown_dict["mine"] = false;
 shown_dict["oscillation"] = false;
+shown_dict["bsm"] = false;
 function showhide(category)
 {
 	var keys = Object.keys(shown_dict);
