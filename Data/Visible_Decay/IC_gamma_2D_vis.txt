@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The difference in inferred spectral index (track-cascade) at Earth by IceCube for visible decay assuming an initial flavor ratio (1:2:0) for various couplings (all six couplings equal) and neutrino mass scales
 # The first row is the parameters:
 #   gamma

@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The inferred spectral index at Earth by IceCube for tracks and cascades for invisible and visible decay assuming an initial flavor ratio (1:2:0) for various couplings (all six couplings equal)
 # The first row is the parameters:
 #   m_1 (eV)

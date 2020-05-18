@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The track to cascade ratio as a function of final neutrino energy (GeV) for invisible and visible decay
 # The first row is the parameters:
 #   g

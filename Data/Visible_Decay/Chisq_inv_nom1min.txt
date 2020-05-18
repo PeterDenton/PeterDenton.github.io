@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The chisq between invisible neutrino decay with the given parameters and the IceCube data assuming an initial flavor ratio (1:2:0) for various couplings (all six couplings equal) and initial spectral indices
 # m_1 is taken to be zero
 # The first row is the parameters:

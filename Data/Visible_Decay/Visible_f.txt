@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The visible decay probability (as defined in the text) as a function of final neutrino energy (GeV) for different channels
 # The first row is the parameters:
 #   g
