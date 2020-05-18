@@ -1,4 +1,4 @@
-# Please cite arXiv:xxxx.xxxxx
+# Please cite arXiv:2005.07200
 # The invisible decay probability (as defined in the text) as a function of final neutrino energy (GeV) for various different couplings
 # The first row is the parameters:
 #   Initial flavor (nu_e = 0, nu_mu = 1, nu_tau = 2)
