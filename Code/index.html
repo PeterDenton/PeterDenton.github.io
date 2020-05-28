@@ -29,11 +29,12 @@
 		[<a id="mine" style="font-weight:normal" onclick="showhide('mine')">Mine</a>]
 		[<a id="oscillation" style="font-weight:normal" onclick="showhide('oscillation')">Oscillation</a>]
 		[<a id="bsm" style="font-weight:normal" onclick="showhide('bsm')">BSM</a>]
+		[<a id="astro" style="font-weight:normal" onclick="showhide('astro')">Astro</a>]
 	</p>
 </div>
 <div class="tpadded">
 	<ul class="hpadded vpadded" style="list-style-type:disc">
-		<span class="all mine bsm">
+		<span class="all mine bsm astro">
 			<li style='list-style-type: "\2605  ";'>
 				<a target="_blank" href="https://github.com/PeterDenton/Astro-Nu-Decay">Astro-Nu-Decay</a>
 				by Asli Abdullahi, Peter B. Denton
@@ -54,7 +55,7 @@
 				[<a target="_blank" href="https://arxiv.org/abs/2003.04319">2003.04319</a>]
 			</li>
 		</span>
-		<span class="all bsm">
+		<span class="all bsm astro">
 			<li>
 				<a target="_blank" href="https://github.com/MiguelEA/nudec_BSM">NUDEC_BSM</a>
 				by Miguel Escudero Abenza
@@ -68,7 +69,7 @@
 				[<a target="_blank" href="https://arxiv.org/abs/1909.10487">1909.10487</a>]
 			</li>
 		</span>
-		<span class="all bsm">
+		<span class="all bsm astro">
 			<li>
 				<a target="_blank" href="https://github.com/iamholger/ulysses">Ulysses</a>
 				by Kris Moffat, Jessica Turner, and Holger Schulz
@@ -96,7 +97,7 @@
 			</li>
 		
 		</span>
-		<span class="all mine" style="display:inline;">
+		<span class="all mine astro" style="display:inline;">
 			<li style='list-style-type: "\2605  ";'>
 				<a target="_blank" href="https://github.com/PeterDenton/ANA">ANA: Astrophysical Neutrino Anisotropy</a>
 				by Peter B. Denton
@@ -116,11 +117,18 @@
 				[<a target="_blank" href="https://arxiv.org/abs/1604.08167">1604.08167</a>]
 			</li>
 		</span>
-		<span class="all" style="display:inline;">
+		<span class="all astro" style="display:inline;">
 			<li>
 				<a target="_blank" href="https://github.com/CRPropa/CRPropa3">CRPropa3</a>
 				by Rafael Alves Batista, Andrej Dundovic, Martin Erdmann, Karl-Heinz Kampert, Daniel Kuempel, Gero Müller, Guenter Sigl, Arjen van Vliet, David Walz, and Tobias Winchen
 				[<a target="_blank" href="https://arxiv.org/abs/1603.07142">1603.07142</a>]
+			</li>
+		</span>
+		<span class="all oscillation astro" style="display:inline;">
+			<li>
+				<a target="_blank" href="https://github.com/SNOwGLoBES/snowglobes">SNOwGLoBES</a>
+				by Kate Scholberg, et al.
+				[<a target="_blank" href="https://arxiv.org/abs/1205.6003">1205.6003</a>]
 			</li>
 		</span>
 		<span class="all oscillation" style="display:inline;">
@@ -150,6 +158,7 @@ shown_dict["all"] = true;
 shown_dict["mine"] = false;
 shown_dict["oscillation"] = false;
 shown_dict["bsm"] = false;
+shown_dict["astro"] = false;
 function showhide(category)
 {
 	var keys = Object.keys(shown_dict);
