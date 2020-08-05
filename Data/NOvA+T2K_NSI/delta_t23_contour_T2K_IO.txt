@@ -1,4 +1,4 @@
-# Please cite arXiv:2008.xxxxx
+# Please cite arXiv:2008.01110
 # The chisq test statistic between a given point in parameter space and the data including pulls from Daya Bay and KamLAND and marginalization over the other four oscillation parameters for a fixed MO
 # The first two rows define the grid:
 #   delta
