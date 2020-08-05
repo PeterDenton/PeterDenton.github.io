@@ -1,4 +1,4 @@
-# Please cite arXiv:2008.xxxxx
+# Please cite arXiv:2008.01110
 # The chisq test statistic between a given point in parameter space and the data including a marginalization over theta23, delta, and Dmsq31 for a fixed MO
 # The first two rows define the grid:
 #   |eps|
