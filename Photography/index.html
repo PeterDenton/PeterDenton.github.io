@@ -66,7 +66,7 @@
 <script>
 var keyword_shown_dict = {};
 var date_shown_dict = {};
-keyword_shown_dict["kAll"] = true;
+keyword_shown_dict["kAll"] = false;
 date_shown_dict["dAll"] = false;
 keyword_shown_dict["Art"] = false;
 keyword_shown_dict["Bird"] = false;
@@ -84,8 +84,51 @@ keyword_shown_dict["Waterfall"] = false;
 date_shown_dict["Aug 2020"] = false;
 date_shown_dict["Sep 2020"] = false;
 date_shown_dict["Oct 2020"] = false;
-date_shown_dict["Nov 2020"] = true;
+date_shown_dict["Nov 2020"] = false;
 
+function readhash()
+{
+	if (window.location.hash)
+	{
+		var hash = window.location.hash.substring(1); // Puts hash in variable, and removes the # character
+		hash = hash.replace("_", " ");
+		hashes = hash.split(":");
+
+		// get keys
+		var keyword_keys = Object.keys(keyword_shown_dict);
+		var date_keys = Object.keys(date_shown_dict);
+
+		// for the keywords that aren't shown
+		showhide_keyword("kAll", false);
+		showhide_date("dAll", false);
+
+		for (var i = 0; i < keyword_keys.length; i++)
+		{
+			if (hashes[0] == keyword_keys[i])
+			{
+				showhide_keyword(keyword_keys[i], false);
+				break;
+			}
+		} // i, keywords
+		for (var i = 0; i < date_keys.length; i++)
+		{
+			if (hashes[hashes.length - 1] == date_keys[i])
+			{
+				showhide_date(date_keys[i], false);
+				break;
+			}
+		} // i, dates
+		apply();
+	} // an incoming hash
+	else // no incoming hash
+	{
+		showhide_keyword("kAll", false);
+		showhide_date("Nov 2020", false);
+		apply();
+	} // no incoming hash
+}
+readhash();
+window.onhashchange = readhash;
 function apply()
 {
 	// get all items
@@ -94,7 +137,7 @@ function apply()
 	var keyword_keys = Object.keys(keyword_shown_dict);
 	var date_keys = Object.keys(date_shown_dict);
 
-	// apply changes
+	// apply changes to photos
 	for (var i = 0; i < photos.length; i++)
 	{
 		photos[i].style.display = "none";
@@ -110,9 +153,40 @@ function apply()
 			} // k, date
 		} // j, keyword
 	} // i, photos
+
+	var hash = "";
+	// apply changes to hash
+	for (var i = 0; i < keyword_keys.length; i++)
+	{
+		if (keyword_shown_dict[keyword_keys[i]] && keyword_keys[i] != "kAll")
+		{
+			hash = keyword_keys[i];
+		}
+	} // i, keyword
+	for (var i = 0; i < date_keys.length; i++)
+	{
+		if (date_shown_dict[date_keys[i]] && date_keys[i] != "dAll")
+		{
+			if (hash != "")
+			{
+				hash += ":";
+			}
+			hash += date_keys[i];
+		}
+	} // i, keyword
+	hash = hash.replace(" ", "_");
+	if (hash != window.location.hash.substring(1)) // don't make the change if there is no change
+	{
+		if (hash == "")
+			history.pushState(null, null, " ");
+		else
+		{
+			hash = "#" + hash;
+			window.location.hash = hash;
+		}
+	}
 }
-apply();
-function showhide_keyword(keyword)
+function showhide_keyword(keyword, apply_b = true)
 {
 	var keys = Object.keys(keyword_shown_dict);
 	// turn everything else off
@@ -141,9 +215,10 @@ function showhide_keyword(keyword)
 			} // if it was already selected
 		}
 	}
-	apply();
+	if (apply_b)
+		apply();
 }
-function showhide_date(date)
+function showhide_date(date, apply_b = true)
 {
 	var keys = Object.keys(date_shown_dict);
 	// turn everything else off
@@ -172,7 +247,8 @@ function showhide_date(date)
 			} // if it was already selected
 		}
 	}
-	apply();
+	if (apply_b)
+		apply();
 }
 </script>
 </body>
