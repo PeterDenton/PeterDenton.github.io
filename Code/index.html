@@ -30,6 +30,7 @@
 		[<a id="oscillation" style="font-weight:normal" onclick="showhide('oscillation')">Oscillation</a>]
 		[<a id="bsm" style="font-weight:normal" onclick="showhide('bsm')">BSM</a>]
 		[<a id="astro" style="font-weight:normal" onclick="showhide('astro')">Astro</a>]
+		[<a id="interactions" style="font-weight:normal" onclick="showhide('interactions')">Interactions</a>]
 	</p>
 </div>
 <div class="tpadded">
@@ -39,6 +40,13 @@
 				<a target="_blank" href="https://github.com/pochoarus/NuPropEarth">NuPropEarth</a>
 				by Alfonso Garcia, Rhorry Gauld, Aart Heijboer, Juan Rojo, Victor Valera
 				[<a target="_blank" href="https://arxiv.org/abs/2004.04756">2004.04756</a>]
+			</li>
+		</span>
+		<span class="all interactions">
+			<li>
+				<a target="_balnk" href="https://git.km3net.de/opensource/gseagen">gSeaGen</a>
+				by Carla Distefano, Alfonso Soto
+				[<a target="_blank" href="https://arxiv.org/abs/2003.14040">2003.14040</a>]
 			</li>
 		</span>
 		<span class="all">
@@ -199,6 +207,7 @@ shown_dict["mine"] = false;
 shown_dict["oscillation"] = false;
 shown_dict["bsm"] = false;
 shown_dict["astro"] = false;
+shown_dict["interactions"] = false;
 function showhide(category)
 {
 	var keys = Object.keys(shown_dict);
