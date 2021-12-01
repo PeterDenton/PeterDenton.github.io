@@ -31,6 +31,7 @@
 		[<a id="bsm" style="font-weight:normal" onclick="showhide('bsm')">BSM</a>]
 		[<a id="astro" style="font-weight:normal" onclick="showhide('astro')">Astro</a>]
 		[<a id="interactions" style="font-weight:normal" onclick="showhide('interactions')">Interactions</a>]
+		[<a id="list" style="font-weight:normal" onclick="showhide('list')">Other Lists</a>]
 	</p>
 </div>
 <div class="tpadded">
@@ -201,6 +202,12 @@
 				[<a target="_blank" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.22.2718">PRD (1980)</a>]
 			</li>
 		</span>
+		<span class="all lists">
+			<li>
+				<a target="_blank" href="https://github.com/nikosarcevic/HEP-ASTRO-COSMO">HEP-ASTRO-COSMO Code list</a>
+				by Nikolina Sarcevic 
+			</li>
+		</span>
 	</ul>
 </div>
 </div>
@@ -223,6 +230,7 @@ shown_dict["oscillation"] = false;
 shown_dict["bsm"] = false;
 shown_dict["astro"] = false;
 shown_dict["interactions"] = false;
+shown_dict["list"] = false;
 function showhide(category)
 {
 	var keys = Object.keys(shown_dict);
