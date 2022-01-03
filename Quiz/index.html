@@ -28,19 +28,24 @@
 		<li id="solarnight"><strong>Solar neutrinos at night</strong>:<br>
 			Are more neutrinos detected from the sun during the day or during the night?
 			<br><a onclick="showhide('solarnight', '.answer')">[answer]</a>
-			<div class="answer" style="display:none;">Night.</div>
+			<div class="answer" style="display:none;"><strong>Night.</strong></div>
 		</li>
 		<li id="solarflavorratio"><strong>Solar neutrino flavor ratios</strong>:<br>
 		For electron neutrinos from the sun, the flavor ratio at the Earth is close to 1:1:1.
 		What is the expected flavor ratio for muon neutrinos produced in the sun?
 			<br><a onclick="showhide('solarflavorratio', '.answer')">[answer]</a>
-			<div class="answer" style="display:none;">1:1:1.</div>
+			<div class="answer" style="display:none;"><strong>1:1:1.</strong> See this <a target="_blank" href="https://twitter.com/jazzwhiz/status/1417913330178666497">[twitter thread]</a> for more.</div>
+		<li id="lastscattering"><strong>Distance to point of neutrino last scattering</strong>:<br>
+		The comoving distance to the photon surface of last scattering is O(10) Gpc. Is the surface of last scattering for neutrinos closer or farther?
+			<br><a onclick="showhide('lastscattering', '.answer')">[answer]</a>
+			<div class="answer" style="display:none;"><strong>Closer.</strong> For massless neutrinos it's a tiny bit farther, but, for neutrinos heavier than &tilde;2e-4 eV, their finite mass moves this surface closer. See <a target="_blank" href="https://arxiv.org/abs/0907.2887">[0907.2887]</a>. Inspired by this <a target="_blank" href="https://twitter.com/DD_Baumann/status/1478019255828623362">[tweet]</a>.</div>
+		</li>
 	</ol>
 
 </div>
 
 <div class="footer">
-	<p>Updated: July 2021</p>
+	<p>Updated: January 2022</p>
 	Contact:
 	<script>
 		<!--
@@ -48,7 +53,7 @@
 		//-->
 	</script>
 	<br>
-	&copy; 2014-2021 Peter Denton.
+	&copy; 2014-2022 Peter Denton.
 </div>
 <script> function showhide(qname, y) { var x = document.getElementById(qname).querySelectorAll(y); for (var i = 0; i < x.length; i++) {if (x[i].style.display === "none") { x[i].style.display = "inline"; } else { x[i].style.display = "none"; } } } </script>
 </body>
