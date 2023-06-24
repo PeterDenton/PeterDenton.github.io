@@ -55,7 +55,8 @@
 		[<a id="Jan 2023" style="font-weight:normal" onclick="showhide_date('Jan 2023')">Jan 2023</a>]
 		[<a id="Feb 2023" style="font-weight:normal" onclick="showhide_date('Feb 2023')">Feb 2023</a>]
 		[<a id="Apr 2023" style="font-weight:normal" onclick="showhide_date('Apr 2023')">Apr 2023</a>]
-		[<a id="May 2023" style="font-weight:bold" onclick="showhide_date('May 2023')">May 2023</a>]
+		[<a id="May 2023" style="font-weight:normal" onclick="showhide_date('May 2023')">May 2023</a>]
+		[<a id="Jun 2023" style="font-weight:bold" onclick="showhide_date('Jun 2023')">Jun 2023</a>]
 </p>
 <p>Keyword:
 		[<a id="kAll" style="font-weight:bold" onclick="showhide_keyword('kAll')">All</a>]
@@ -989,6 +990,7 @@
 <span class="kAll dAll Hiking Bird May 2023" title="May 27, 2023: Hiking, Bird">	<a href="https://www.dropbox.com/s/8gj6h8k6bu91duf/P1140144.JPG?raw=1"><img src="Small/P1140144.JPG" alt="May 27, 2023: Hiking, Bird"></a></span>
 <span class="kAll dAll Hiking May 2023" title="May 27, 2023: Hiking">	<a href="https://www.dropbox.com/s/v4kez2y230wghzy/P1140150.JPG?raw=1"><img src="Small/P1140150.JPG" alt="May 27, 2023: Hiking"></a></span>
 <span class="kAll dAll Space May 2023" title="May 29, 2023: Space">	<a href="https://www.dropbox.com/s/eev9vmdo0wiktbn/P1140154.JPG?raw=1"><img src="Small/P1140154.JPG" alt="May 29, 2023: Space"></a></span>
+<span class="kAll dAll Bird Tree Jun 2023" title="Jun 24, 2023: Bird, Tree">	<a href="https://www.dropbox.com/s/qxug8l3ufm27v8w/P1140170.JPG?raw=1"><img src="Small/P1140170.JPG" alt="Jun 24, 2023: Bird, Tree"></a></span>
 </div>
 </div>
 <script>
@@ -1048,6 +1050,7 @@ date_shown_dict["Jan 2023"] = false;
 date_shown_dict["Feb 2023"] = false;
 date_shown_dict["Apr 2023"] = false;
 date_shown_dict["May 2023"] = false;
+date_shown_dict["Jun 2023"] = false;
 
 function readhash()
 {
@@ -1086,7 +1089,7 @@ function readhash()
 	else // no incoming hash
 	{
 		showhide_keyword("kAll", false);
-		showhide_date("May 2023", false);
+		showhide_date("Jun 2023", false);
 		apply();
 	} // no incoming hash
 }
