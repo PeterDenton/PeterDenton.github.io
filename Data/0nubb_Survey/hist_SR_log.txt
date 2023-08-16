@@ -1,6 +1,6 @@
 # Please cite arXiv:2308.xxxxx
 # The last column indicates the fraction in the funnel (log prior, see eq. 3.2 in the text). nan means that the model isn't viable.
-# For the sum rule files, the columns are:
+# The columns are:
 #   c1
 #   c2
 #   d
