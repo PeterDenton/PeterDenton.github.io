@@ -1,4 +1,4 @@
-# Please cite arXiv:2308.xxxxx
+# Please cite arXiv:2308.2308.09737
 # The name of each of the 75 CLC model in machine readable format to compare with the hist_CLC file
 # The first column indicates the nature of theta12nu
 # The second column indicates the overall structure of the correction with regards to the number of Charged lepton correction rotation matrices and the number of Neutral lepton correction rotation matrices

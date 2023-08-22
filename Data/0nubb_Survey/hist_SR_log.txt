@@ -1,4 +1,4 @@
-# Please cite arXiv:2308.xxxxx
+# Please cite arXiv:2308.2308.09737
 # The last column indicates the fraction in the funnel (log prior, see eq. 3.2 in the text). nan means that the model isn't viable.
 # The columns are:
 #   c1
